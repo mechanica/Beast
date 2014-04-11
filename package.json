@@ -1,0 +1,27 @@
+{
+  "name": "Beast",
+  "version": "0.0.0",
+  "description": "Workflow engine experiment",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mechanica/Beast.git"
+  },
+  "keywords": [
+    "workflow",
+    "service"
+  ],
+  "author": "Kirill Enykeev <enykeev@mechanica.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mechanica/Beast/issues"
+  },
+  "homepage": "https://github.com/mechanica/Beast",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.18.2"
+  }
+}
