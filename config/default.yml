@@ -7,7 +7,9 @@ queue:
     durable: true
     autoDelete: false
 
-workers: 10
+instances:
+  workers: 10
+  engines: 3
 
 log:
   console:

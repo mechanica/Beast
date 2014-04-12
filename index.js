@@ -5,15 +5,19 @@ var cluster = require('cluster')
   ;
 
 if (cluster.isMaster) {
-  for (var i = 0; i < config.workers; i++) {
+  var i;
+
+  for (i = 0; i < config.instances.workers; i++) {
     cluster.fork({
       type: 'worker'
     });
   }
 
-  cluster.fork({
-    type: 'engine'
-  });
+  for (i = 0; i < config.instances.engines; i++) {
+    cluster.fork({
+      type: 'engine'
+    });
+  }
 } else if (cluster.isWorker) {
   require('./lib/' + process.env.type + '.js');
 }
