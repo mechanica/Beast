@@ -1,0 +1,7 @@
+queue:
+  connection:
+    host: localhost
+
+  exchange: logs
+
+workers: 10
