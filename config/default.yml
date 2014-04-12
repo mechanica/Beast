@@ -2,6 +2,15 @@ queue:
   connection:
     host: localhost
 
-  exchange: logs
+  exchange:
+    name: beast
+    durable: true
+    autoDelete: false
 
 workers: 10
+
+log:
+  console:
+    level: debug
+    colorize: true
+    timestamp: 'MMMM Do YYYY, hh:mm:ss'
