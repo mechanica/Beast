@@ -16,4 +16,4 @@ log:
     timestamp: 'MMMM Do YYYY, hh:mm:ss'
 
 persistence:
-  file: persistence.db
+  url: mongodb://localhost:27017/exampleDb
