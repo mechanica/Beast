@@ -13,6 +13,6 @@ instances:
 
 log:
   console:
-    level: debug
+    level: silly
     colorize: true
     timestamp: 'MMMM Do YYYY, hh:mm:ss'
