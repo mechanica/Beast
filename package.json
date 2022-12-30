@@ -22,7 +22,7 @@
   "homepage": "https://github.com/mechanica/Beast",
   "devDependencies": {
     "chai": "^1.9.1",
-    "mocha": "^6.1.4"
+    "mocha": "^10.2.0"
   },
   "dependencies": {
     "amqplib": "^0.1.3",
